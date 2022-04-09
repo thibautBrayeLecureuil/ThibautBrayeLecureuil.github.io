@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 header ul {
     list-style-type: none;
     margin: 0;
@@ -38,6 +39,8 @@ li a:hover {
 body{
     background-image: url("../image/fondsiteport.jpg");
     background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+
 
 }
 
