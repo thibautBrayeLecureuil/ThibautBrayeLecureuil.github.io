@@ -21,7 +21,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: darkgrey;background: #bea2e7; /* Old browsers */
+    background-color: darkgrey;
     border-right: none;
 }
 
@@ -46,14 +46,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-image: url("../image/fondsiteport.jpg");
   background-attachment: fixed;
-}
-.container ul:before {
-  content: '';
-  width: 1px;
-  height: 100%;
-  position: absolute;
-  border-left: 2px dashed #fff;
-  
 }
 .container ul {
   list-style: none;

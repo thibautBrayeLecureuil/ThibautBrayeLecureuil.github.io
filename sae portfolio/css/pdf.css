@@ -22,7 +22,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: darkgrey;background: #bea2e7; /* Old browsers */
+    background-color: darkgrey; /* Old browsers */
     border-right: none;
 }
 
@@ -40,7 +40,14 @@ body{
     background-image: url("../image/fondsiteport.jpg");
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
-
-
+    display: flex;
+    flex-direction: column;
+    
 }
 
+embed{
+    margin: auto;
+    margin-top: 50px;
+    height: 800;
+    width: 1200;
+}
