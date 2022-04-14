@@ -6,21 +6,21 @@ header ul {
     background-color: lightgrey;
 }
 
-li {
+header li {
     float: left;
     border-right: 1px solid #bbb
 }
 
-li a {
+header li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    margin: 14px 16px;
     text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+header li a:hover {
     background-color: darkgrey;
     border-right: none;
 }
