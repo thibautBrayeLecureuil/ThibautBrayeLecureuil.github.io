@@ -1,69 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 header ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     overflow: hidden;
-    background-color: lightgrey;
+    background-color: black;
+    border-radius: 10px;
+    display : flex;
+    justify-content: center;
+    
 }
 
-header li {
-    float: left;
-    border-right: 1px solid #bbb
+header {
+ margin: 1vw;
 }
 
 header li a {
-    display: block;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active a {
     color: black;
     text-align: center;
-    margin: 14px 16px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 header li a:hover {
-    background-color: darkgrey;
+    border-radius: 10px;
+    background-color: grey; /* Old browsers */
     border-right: none;
 }
 
-.active {
-    background-color: cyan;
+header .active {
+    border-radius: 10px;
+    background-color: mediumslateblue;
     color: white;
 }
 
-* {
-    margin: 0; 
-    padding: 0;
+body{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
+img{
+    height: 300px;
+    border-radius: 300px;
+}
 
+#photo{
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+
+  display: flex;
+  justify-content: center;
+}
+
+#center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#presentation{
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /*----------------------------------------------------------------------------------*/
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 body {
-  height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  background-image: url("../image/fondsiteport.jpg");
-  background-attachment: fixed;
+  background-color: white;
+
 }
 .container ul {
   list-style: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1px 300px;
-  color: #fff;
-  font-size: 13px;
+  padding: 3vw;
+  color: black;
+  font-size: 15px;
 }
+
 .container ul li {
   position: relative;
   margin-left: 30px ;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: mediumslateblue;
   padding: 14px;
   border-radius: 6px;
-  width: 250px;
+  width: 350px;
   box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08)
 }
 .container ul li:not(:first-child) {
@@ -72,7 +105,7 @@ body {
 .container ul li > span {
   width: 2px;
   height: 100%;
-  background: #fff;
+  background: grey;
   left: -30px;
   top: 0;
   position: absolute;
@@ -82,9 +115,9 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid grey;
   position: absolute;
-  background: #86b7e7;
+  background: mediumslateblue;
   left: -5px;
   top: 0;
 }
@@ -113,9 +146,22 @@ body {
   left: -35px;
   font-weight: bold;
 }
+
+#last {
+  left : -75px;
+}
 .container span.number span:first-child {
   top: 0;
 }
 .container span.number span:last-child {
   top: 100%;
 }
+
+
+
+
+
+
+
+
+
