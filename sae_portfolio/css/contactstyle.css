@@ -67,18 +67,31 @@ h1{
 }
 
 #contact-block{
+    display: flex;
+    flex-direction: column;
     margin-top: 2vw;
     background-color: mediumslateblue;
-    padding: 5%;
+    padding: 2%;
+    align-items : space-around;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
+    align-items : center;
+    min-width: 470px;
+    min-height: 300;
 }
 
 img{
     width:100px;
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+
+#phone{
+    width: 75;
 }
