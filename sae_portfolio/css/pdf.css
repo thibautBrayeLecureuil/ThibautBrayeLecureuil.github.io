@@ -43,18 +43,6 @@ header .active {
     color: white;
 }
 
-#sommaire ul {
-    list-style-type: none;
-}
-
-li a {
-    display: block;
-    color: grey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
 body{
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -77,6 +65,7 @@ body{
   
   .gallery {
     display: grid;
+    align-items: center;
     margin: 3em 0;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: 1fr;
@@ -93,8 +82,56 @@ body{
     flex: 1;
     max-width: 100%;
     object-fit: cover;
+    border : 1px solid rgb(236, 236, 236);
   }
 
   img:hover {
     opacity: 0.6;
   }
+
+  embed{
+    display: none;
+  }
+
+  
+
+  :target{
+    display: flex;
+    flex-direction: column;
+    font: 1.5em/1.5 sans-serif;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  :target > a{
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+
+  div > a{
+    display: none;
+  }
+
+  :target > embed{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+  }
+
+  @media screen and (max-width: 1000px) {
+    
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    :target > embed{
+      display: flex;
+      height: 60%;
+      width: 100%;
+  
+    }
+  }
+
+  

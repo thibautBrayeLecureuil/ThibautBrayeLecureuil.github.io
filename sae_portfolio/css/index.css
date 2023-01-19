@@ -61,10 +61,22 @@ img{
   justify-content: center;
 }
 
+
 #center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #center {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+
+  
 }
 
 #presentation{
@@ -76,18 +88,11 @@ img{
 
 /*----------------------------------------------------------------------------------*/
 
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: white;
-
-}
 .container ul {
   list-style: none;
   padding: 3vw;
   color: black;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .container ul li {
@@ -129,10 +134,10 @@ body {
 }
 .container div .title, .container div .type {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 20px;
 }
 .container div .info {
-  font-weight: 300;
+  font-weight: 25px;
 }
 .container div > div {
   margin-top: 5px;
@@ -142,13 +147,13 @@ body {
 }
 .container span.number span {
   position: absolute;
-  font-size: 10px;
-  left: -35px;
+  font-size: 15px;
+  left: -50px;
   font-weight: bold;
 }
 
 #last {
-  left : -75px;
+  left : -105px;
 }
 .container span.number span:first-child {
   top: 0;
